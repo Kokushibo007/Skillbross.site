@@ -1,116 +1,123 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skill Bros Digital Agency</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Skill Bros Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
     body {
       background-color: #f9f9f9;
-      color: #111;
+      color: #333;
       line-height: 1.6;
     }
     header {
-      background: #111;
-      color: #fff;
-      padding: 3rem 2rem;
+      background: url('https://images.unsplash.com/photo-1606851092853-6e481dfb8b48?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      height: 100vh;
+      color: white;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
     header p {
       font-size: 1.2rem;
-      margin-top: 0.5rem;
+      margin-bottom: 20px;
     }
-    .btn {
-      background: #22c55e;
-      color: #fff;
-      padding: 0.8rem 1.6rem;
-      border: none;
-      border-radius: 0.5rem;
-      margin-top: 1.5rem;
+    .cta-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 15px 25px;
       text-decoration: none;
-      display: inline-block;
-      font-weight: 600;
+      font-weight: bold;
+      border-radius: 5px;
     }
     section {
-      padding: 3rem 2rem;
-      max-width: 960px;
+      padding: 60px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+    .services, .portfolio, .about, .testimonials {
+      margin-bottom: 60px;
     }
-    .grid {
+    .services h2, .portfolio h2, .about h2, .testimonials h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .services ul, .testimonials ul {
+      list-style: none;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-    .card {
-      background: #fff;
-      border-radius: 0.75rem;
-      padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    .services li, .testimonials li {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .portfolio img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     footer {
+      background-color: #111;
+      color: white;
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
+      padding: 30px 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Skill Bros Digital Agency</h1>
-    <p>World-Best & Mobile-First Digital Solutions That Really Drive Results</p>
-    <a href="https://wa.me/918446267702" class="btn">Book a Free Consultation</a>
-  </header>  <section>
+    <h1>Welcome to Skill Bros Agency</h1>
+    <p>Your digital partner for design, writing, editing, and gaming services</p>
+    <a class="cta-btn" href="https://wa.me/918446267702" target="_blank">Chat on WhatsApp</a>
+  </header>
+
+  <section class="services">
     <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Graphic Design</h3>
-        <p>Logos, social media posts, carousels, and branding kits using Canva and mobile tools.</p>
-      </div>
-      <div class="card">
-        <h3>Video Editing</h3>
-        <p>High-converting reels, shorts, and CapCut templates crafted for engagement.</p>
-      </div>
-      <div class="card">
-        <h3>Content Writing</h3>
-        <p>SEO blogs, product descriptions, ad copy, and scripts with conversion in mind.</p>
-      </div>
-      <div class="card">
-        <h3>Digital Products</h3>
-        <p>Downloadable templates, mini-courses, and tools to level up your brand or content.</p>
-      </div>
-    </div>
-  </section>  <section>
-    <h2>What Our Clients Say</h2>
-    <div class="grid">
-      <div class="card">
-        <p>“Skill Bros gave my brand the boost it needed on Instagram. Loved the designs!”</p>
-        <strong>- Priya, Fashion Creator</strong>
-      </div>
-      <div class="card">
-        <p>“Their reel editing service is top-notch. Highly recommended for content creators.”</p>
-        <strong>- Aarav, Gaming Channel Owner</strong>
-      </div>
-    </div>
-  </section>  <section>
-    <h2>Let's Build Together</h2>
-    <p>Send us a WhatsApp message to collaborate or get a free consultation.</p>
-    <a href="https://wa.me/918446267702" class="btn">Message Us on WhatsApp</a>
-  </section>  <footer>
-    &copy; 2025 Skill Bros Digital Agency. All rights reserved.
+    <ul>
+      <li><strong>Graphic Design</strong><br>Logos, Social Posts, Thumbnails</li>
+      <li><strong>Video Editing</strong><br>CapCut Reels, YouTube Shorts, Promos</li>
+      <li><strong>Content Writing</strong><br>Blogs, Copywriting, SEO Articles</li>
+      <li><strong>Gaming Services</strong><br>Game Coaching, Streams, Tournaments</li>
+    </ul>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portfolio Preview</h2>
+    <img src="https://images.unsplash.com/photo-1581091870620-b7e7f5e48a1a?auto=format&fit=crop&w=1000&q=80" alt="Portfolio sample" />
+  </section>
+
+  <section class="about">
+    <h2>About Skill Bros</h2>
+    <p>We are a digital agency delivering creative solutions in design, writing, editing, and gaming. We turn skills into results, helping individuals and brands grow their presence online.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Clients Say</h2>
+    <ul>
+      <li>"Amazing designs and quick delivery. Highly recommend!"</li>
+      <li>"Their CapCut video reels blew up my Instagram reach!"</li>
+      <li>"Great writers! SEO articles got me ranked within weeks."</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Skill Bros Agency | All Rights Reserved</p>
   </footer>
 </body>
 </html>
