@@ -2,122 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Skill Bros Agency</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+    body, html {
+      height: 100%;
+      scroll-behavior: smooth;
     }
-    body {
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1606851092853-6e481dfb8b48?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+
+    .hero {
+      background: url('https://www.google.com/search?client=ms-android-oppo-terr1-rso2&sca_esv=d2e7cdd0b004c888&sxsrf=AHTn8zopbvshzLWRocm8hUEOf6Ksa70YTQ:1747294073973&udm=2&fbs=ABzOT_BF2BQKolEz0Jz2KKb_4ZjDW6GeweRMv5cKJmH4v19471OpJRur1e2Yx3AmQWD6193_5yL4jRgjTgsdzxmy2zCHapv594_Lw1sT8wz4Za6eM49soWXuBG7uBnrnAx09Veb3B1Pd3lfTgHBQ2DnN5iQiK4xdXszOu3hHJ4eLx_n3ShkVKJsc957eYMIkS0oVAzvASIGJR9pPMHkjjxe9p1twrLPyUNWFsDNTN67clum8rI2Z9gM&q=professional+background+image+for+website&sa=X&ved=2ahUKEwi5uuPU-aSNAxUsyDgGHRhONroQtKgLegQIHxAB&biw=360&bih=668&dpr=3#sv=CAMSoAUa-AQKpwIKuQEStgEKd0FBLUtUaGNLVWdSMXFsdHFmcXlhdVRPMnhfUnNEbnktSldxVmVwVzBzWVFFQ2haY1ZyOUFpR3M3NEdrNUpYaXgzNFVYSl8tcWJHLUhvb0NYeGU3TmI3WDJTYmtTZkxXYlltSVlMcFdUcjF3QTk0ek1KVVhOVDNnEhdlNWNsYUpiSklQZTg0LUVQdy15SXFRMBoiQUNEWEw0bXZyVENmM0JKNUFQYlFFOHUzU2xjTGpISlZsQRIDODQ5GgEzIi4KAXESKXByb2Zlc3Npb25hbCBiYWNrZ3JvdW5kIGltYWdlIGZvciB3ZWJzaXRlIgcKA3RicxIAIigKBGVxbGQSIENnSUlBQkFBT2dRSUFSQUFWWnM2MlQxZ0FXMjZGa2NfErgCCs8BEswBCowBQUEtS1RoZk5wQ2Nsd1l5RUpXVjZ1cUVEWWFVODBJLWwxMTNPd2xMSmFoZ2YyeDU0T3RIeFBnbkgybi1LeFg2QXNyMVRIMldSTkNjaWF6ckFKeUFYdVMtU0FMZzVObC1FRXFhR1pRRjlrR3lQUWQ1T1FKNTZscW42SUZjUWFjelFkSFQtbTNoWHNYdDESF2U1Y2xhSmJKSVBlODQtRVB3LXlJcVEwGiJBQ0RYTDRucnZjVXg1RG9VbHF0QUJ5WUlTa2tTN2R3NEZnEgQ0Njk4GgEzIhgKBmltZ2RpaRIOWG1kTlZFX255R0tWdE0iFwoFZG9jaWQSDkczZDFqTmUxQ19LenZNIigKBGVxbGQSIENnSUlBQkFBT2dRSUFSQUFWWnM2MlQxZ0FXMjZGa2NfGhFzdl9YbWROVkVfbnlHS1Z0TSAEKh8KBm1vc2FpYxITZS1zdl9YbWROVkVfbnlHS1Z0TRgAMAEYByC6ypTvDTABQAI') no-repeat center center/cover;
       height: 100vh;
       color: white;
-      text-align: center;
       display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      padding: 0 20px;
+      text-align: center;
+      position: relative;
     }
-    header h1 {
-      font-size: 3rem;
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* dark overlay */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
       margin-bottom: 10px;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
     }
-    .cta-btn {
-      background-color: #25D366;
+
+    .whatsapp-btn {
+      background: #25D366;
       color: white;
-      padding: 15px 25px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+      transition: background 0.3s;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+
+    .whatsapp-btn:hover {
+      background: #1ebd58;
     }
-    .services, .portfolio, .about, .testimonials {
-      margin-bottom: 60px;
-    }
-    .services h2, .portfolio h2, .about h2, .testimonials h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    .services ul, .testimonials ul {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .services li, .testimonials li {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .portfolio img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      background-color: #111;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2em; }
+      .hero p { font-size: 1em; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Skill Bros Agency</h1>
-    <p>Your digital partner for design, writing, editing, and gaming services</p>
-    <a class="cta-btn" href="https://wa.me/918446267702" target="_blank">Chat on WhatsApp</a>
-  </header>
-
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li><strong>Graphic Design</strong><br>Logos, Social Posts, Thumbnails</li>
-      <li><strong>Video Editing</strong><br>CapCut Reels, YouTube Shorts, Promos</li>
-      <li><strong>Content Writing</strong><br>Blogs, Copywriting, SEO Articles</li>
-      <li><strong>Gaming Services</strong><br>Game Coaching, Streams, Tournaments</li>
-    </ul>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <br>Skill Bros Agency</h1>
+      <p>Your digital partner for design, writing, editing, and gaming services</p>
+      <a href="https://wa.me/918446267702" class="whatsapp-btn">Chat on WhatsApp</a>
+    </div>
   </section>
-
-  <section class="portfolio">
-    <h2>Portfolio Preview</h2>
-    <img src="https://images.unsplash.com/photo-1581091870620-b7e7f5e48a1a?auto=format&fit=crop&w=1000&q=80" alt="Portfolio sample" />
-  </section>
-
-  <section class="about">
-    <h2>About Skill Bros</h2>
-    <p>We are a digital agency delivering creative solutions in design, writing, editing, and gaming. We turn skills into results, helping individuals and brands grow their presence online.</p>
-  </section>
-
-  <section class="testimonials">
-    <h2>What Clients Say</h2>
-    <ul>
-      <li>"Amazing designs and quick delivery. Highly recommend!"</li>
-      <li>"Their CapCut video reels blew up my Instagram reach!"</li>
-      <li>"Great writers! SEO articles got me ranked within weeks."</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 Skill Bros Agency | All Rights Reserved</p>
-  </footer>
 </body>
 </html>
